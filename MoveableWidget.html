@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery UI Draggable Example</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <style>
+    #draggable {
+      width: 100px;
+      height: 100px;
+      background: lightblue;
+      border: 1px solid black;
+      cursor: move;
+    }
+  </style>
+</head>
+<body>
+  <div id="draggable">Drag me!</div>
+  <script>
+    $( function() {
+      $( "#draggable" ).draggable();
+    });
+  </script>
+</body>
+</html>
